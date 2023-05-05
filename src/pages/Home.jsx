@@ -1,4 +1,5 @@
-import ListPosts from "./ListPosts"
+import ListCategories from "../components/ListCategories"
+import ListPosts from "../components/ListPosts"
 
 const Home = () => {
   return (
@@ -6,11 +7,8 @@ const Home = () => {
       <div className="container">
         <h2 className="title-page">Pet noticias</h2>
       </div>
-      <section className="container flex flex--center">
-        <article className="card post">
-          <ListPosts url={"/posts"}></ListPosts>
-        </article>
-      </section>
+      <ListCategories></ListCategories>
+      <ListPosts url={"/posts"}></ListPosts>
     </main>
   )
 }
