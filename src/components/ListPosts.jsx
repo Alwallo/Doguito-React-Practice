@@ -30,4 +30,4 @@ const ListPosts = ({ url }) => {
     )
 }
 
-export default ListPosts
+export default ListPosts;
